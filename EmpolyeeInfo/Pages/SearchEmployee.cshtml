@@ -1,0 +1,17 @@
+﻿@page
+@model SearchEmployeeModel
+<h2>Search Employee</h2>
+<form method="post">
+    <label>Employee ID:</label>
+    <input type="text" name="employeeId" />
+    <button type="submit">Search</button>
+</form>
+
+@if (Model.Employee != null)
+{
+    <div>
+        <h3>Employee Details</h3>
+        <p>@Model.Employee.FirstName @Model.Employee.LastName</p>
+        <!-- Display other employee details here -->
+    </div>
+}

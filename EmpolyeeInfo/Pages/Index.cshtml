@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+<h2>List of Employees</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Division</th>
+            <th>Building</th>
+            <th>Title</th>
+            <th>Room</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model.Employees)
+        {
+            <tr>
+                <td>@employee.EmployeeID</td>
+                <td>@employee.FirstName</td>
+                <td>@employee.LastName</td>
+                <td>@employee.Division</td>
+                <td>@employee.Building</td>
+                <td>@employee.Title</td>
+                <td>@employee.Room</td>
+            </tr>
+        }
+    </tbody>
+</table>
