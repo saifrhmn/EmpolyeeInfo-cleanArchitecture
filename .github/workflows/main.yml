@@ -1,9 +1,11 @@
 name: Bulid & Deploy DotNet app
 
+
 on:
   Push:
       branches:
         - master
+
 
 jobs:
    build-depoly:
