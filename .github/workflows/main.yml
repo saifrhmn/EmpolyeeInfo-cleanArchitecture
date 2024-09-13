@@ -2,9 +2,7 @@ name: Bulid & Deploy DotNet app
 
 
 on:
-  Push:
-      branches:
-        - master
+  workflow_dispatch:
 
 
 jobs:
