@@ -27,7 +27,7 @@ namespace EmpolyeeInfo.EmpolyeeInfo.Infrastructure.Repository
                 employees.Add(new Employee
                 {
                     EmployeeID = reader.GetInt32(0),
-                    FirstName = reader.GetString(1),
+                    FirstName = reader.GetString(1),    
                     LastName = reader.GetString(2),
                     Division = reader.GetString(3),
                     Building = reader.GetString(4),
