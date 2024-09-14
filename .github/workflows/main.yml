@@ -24,5 +24,11 @@ jobs:
         - name: Build the project
           run: dotnet build --configuration Release --no-restore
 
+        # publish
+        - name: Publish
+          run: dotnet publish --configuration Release --output ./publish
+
+        # deploy
+
 
 
